@@ -35,4 +35,4 @@ print(data)
 print(data.drop(['shanghai', 'hangzhou']))
 print(data.drop('two', axis = 1)) # drop 第一个参数label相当于 index
 print(data.drop(['two', 'four'], axis = 1))
-print(data.drop(columns='two'))
+# print(data.drop(columns='two'))

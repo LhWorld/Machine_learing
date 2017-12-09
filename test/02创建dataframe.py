@@ -65,17 +65,17 @@ pop = {'shangsha':{2001:2.4, 2002:2.9},
         'beijing':{2000:1.5, 2001:1.7, 2002:3.6}}
 frame3 = DataFrame(pop)
 print(frame3)
-print(frame3.T)
-print("-"*40)
-
-#指定索引顺序，以及使用切片初始化数据。'
-print(DataFrame(pop, index = [2001, 2002, 2003]))
-pdata = {'beijing':frame3['beijing'][:-1], 'shangsha':frame3['shangsha'][:2]}
-print(DataFrame(pdata))
-print("-"*40)
+# print(frame3.T)
+# print("-"*40)
+#
+# #指定索引顺序，以及使用切片初始化数据。'
+# print(DataFrame(pop, index = [2001, 2002, 2003]))
+# pdata = {'beijing':frame3['beijing'][:-1], 'shangsha':frame3['shangsha'][:2]}
+# print(DataFrame(pdata))
+# print("-"*40)
 
 #指定索引和列的名称'
-frame3.index.name = 'year'
-frame3.columns.name = 'state'
-print(frame3)
-print(frame3.values)
+# frame3.index.name = 'year'
+# frame3.columns.name = 'state'
+# print(frame3)
+# print(frame3.values)

@@ -8,18 +8,18 @@ plt.rcParams['axes.unicode_minus']=False #用来正常显示负号
 # 需要两点的坐标数据
 # data = np.array([0,0,1,1]).reshape((2,2))
 
-# ng = np.arange(0,6,0.01) # 角度：2*pi的倍数
-#
-# d = np.cos(2*np.pi*ng);
-#
-#
-# plt.plot(ng,d)
-#
-# plt.title('第一张图片')
-# plt.xlabel('x轴')
-# plt.ylabel('y轴')
-#
-# plt.show()
+ng = np.arange(0,6,0.01) # 角度：2*pi的倍数
+
+d = np.cos(2*np.pi*ng);
+
+
+plt.plot(ng,d)
+
+plt.title('第一张图片')
+plt.xlabel('x轴')
+plt.ylabel('y轴')
+
+plt.show()
 
 # 第三个例子
 # 1D data

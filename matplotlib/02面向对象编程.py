@@ -4,7 +4,7 @@ from matplotlib.figure import Figure
 from matplotlib.axes import  Axes
 from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
 
-f = Figure() # 画布对象 创建一个画布对象
+f = Figure() # 画布对象
 
 # f.set('font.sans-serif'='SimHei')
 canvas = FigureCanvas(f)
@@ -20,4 +20,4 @@ ax.set_ylabel("y value")
 # f.set_axes()
 # f.show()
 # canvas.draw()
-canvas.print_jpg('dome2.jpg')#生成图片
+canvas.print_jpg('dome2.jpg')

@@ -17,10 +17,10 @@ class ImageTools(object):
             r_array = np.array(r).reshape(62500)
             g_array = np.array(g).reshape(62500)
             b_array = np.array(b).reshape(62500)
-            image_arry = np.concatenate((r_array,g_array,b_array))
-            images=np.concatenate((images,image_arry))
+            image_arry = np.concatenate((r_array,g_array,b_array)) #按照行打开文件
+            images=np.concatenate((images,image_arry)) #组合在一起 行拼接
         print(images.shape)
-        images =np.array(images).reshape((len(files),(3*62500)))
+        images =np.array(images).reshape((len(files),(3*62500))) # 列拼接
         print(images.shape)
         f =open(ImageTools.data_file_path,'wb')
         p.dump(images,f)

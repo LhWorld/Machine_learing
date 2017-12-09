@@ -16,9 +16,9 @@ from pandas import Series
 
 #用数组生成Series ,默认情况下使用数字索引
 obj = Series([4, 7, -5, 3])
-# print(obj)
-# print(obj.values)
-# print(obj.index)
+print(obj)
+print(obj.values)
+print(obj.index)
 print(obj.shape,obj.ndim) #shape是维度的数据 ndim是维度
 # print("-"*40)
 # #

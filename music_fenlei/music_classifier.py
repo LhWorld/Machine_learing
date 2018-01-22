@@ -54,23 +54,25 @@ Y = np.array(Y)
 # ------train logistic classifier--------------
 
 model = LogisticRegression() #导入线性模型
-model.fit(X, Y)
+model.fit(X, Y) # 默认是解析解
 
 # 可以采用Python内建的持久性模型 pickle 来保存scikit的模型
 
 output = open('data.pkl', 'wb')
-pickle.dump(model, output)
+pickle.dump(model, output) # pickle存模型
 output.close()
 
 pkl_file = open('data.pkl', 'rb')
-model_load = pickle.load(pkl_file)
-pprint.pprint(model_load)
+model_load = pickle.load(pkl_file) # 加载模型
+pprint.pprint(model_load) # 打印更加漂亮些
 pkl_file.close()
 
+
+# 测试
 print('Starting read wavfile...')
 sample_rate, test = wavfile.read("e:/StudyMaterials/python/python-sklearn/trainset/sample/heibao-wudizirong-remix.wav")
-testdata_fft_features = abs(fft(test))[:1000]
+testdata_fft_features = abs(fft(test))[:1000] # 傅里叶变换 还是8Kb
 print(sample_rate, testdata_fft_features, len(testdata_fft_features))
-type_index = model_load.predict([testdata_fft_features])[0]
+type_index = model_load.predict([testdata_fft_features])[0]  # 把新的数据加载到模型 返回的是一个集合里面就一个数
 print(type_index)
 print(genre_list[type_index])

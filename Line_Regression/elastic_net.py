@@ -1,12 +1,11 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
 # 文件名: elastic_net.py
-
+# elastic_net函数
 import numpy as np
 from sklearn.linear_model import ElasticNet
 from sklearn.linear_model import SGDRegressor
 
-__author__ = 'yasaka'
 
 X = 2 * np.random.rand(100, 1)
 y = 4 + 3 * X + np.random.randn(100, 1)

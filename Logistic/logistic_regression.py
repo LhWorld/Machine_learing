@@ -7,7 +7,6 @@ from sklearn import datasets
 from sklearn.linear_model import LogisticRegression
 import matplotlib.pyplot as plt
 
-__author__ = 'yasaka'
 
 iris = datasets.load_iris()# 鸢尾花数据集
 print(list(iris.keys()))

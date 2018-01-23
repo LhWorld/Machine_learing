@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
 # 文件名: batch_gradient_descent.py
-
+#自定义批量梯度下降公式
 import numpy as np
 
 X = 2 * np.random.rand(100, 1)  # 随机取100个数，然后放到一列中去，是一个向量

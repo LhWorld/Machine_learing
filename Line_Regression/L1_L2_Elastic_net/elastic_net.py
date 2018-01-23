@@ -9,7 +9,7 @@ from sklearn.linear_model import SGDRegressor
 
 X = 2 * np.random.rand(100, 1)
 y = 4 + 3 * X + np.random.randn(100, 1)
-
+#两种方式实现Elastic_net
 elastic_net = ElasticNet(alpha=0.1, l1_ratio=0.5)
 elastic_net.fit(X, y)
 print(elastic_net.predict(1.5))

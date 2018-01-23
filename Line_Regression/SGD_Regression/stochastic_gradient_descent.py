@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
 # 文件名: stochastic_gradient_descent.py
-#自定义的随机批量梯度下降实现方式
+#自定义的随机梯度下降实现方式
 import numpy as np
 
 

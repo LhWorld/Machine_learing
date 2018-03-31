@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
-# 文件名: logistic_regression.py
+# 文件名: logistic_regression01.py
 #逻辑回归预测鸢尾花，根据花瓣的宽度
 import numpy as np
 from sklearn import datasets

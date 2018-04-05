@@ -9,8 +9,8 @@ y = 4 + 3 * X + np.random.randn(100, 1)  # randn 正态分布，（1列100行）
 X_b = np.c_[np.ones((100, 1)), X]  # 相当于100行两列，第一列全是1 ，第二列是一个随机的数
 # print(X_b)
 
-learning_rate = 0.22 #学习率，步长
-n_iterations = 1000  #迭代100次
+learning_rate = 0.22 #学习率，步长 当学习率小的时候，可能每到最优点时就停止迭代了。
+n_iterations = 1000 #迭代100次
 m = 100  # 100行样本
 
 theta = np.random.randn(2, 1)# 初始w值

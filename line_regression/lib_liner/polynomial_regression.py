@@ -7,7 +7,6 @@ import matplotlib.pyplot as plt
 from sklearn.preprocessing import PolynomialFeatures
 from sklearn.linear_model import LinearRegression
 
-__author__ = 'yasaka'
 
 m = 100
 X = 6 * np.random.rand(m, 1) - 3
@@ -15,8 +14,8 @@ y = 0.5 * X ** 2 + X + 2 + np.random.randn(m, 1)
 
 plt.plot(X, y, 'b.')
 
-d = {1: 'g-', 2: 'r+', 20: 'y*'}
-for i in d:
+d = {1: 'g-', 2: 'r+', 30: 'y*'}
+for i in d:#模拟过拟合
     poly_features = PolynomialFeatures(degree=i, include_bias=False)
     X_poly = poly_features.fit_transform(X)
     # print(X[0])

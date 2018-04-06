@@ -1,7 +1,7 @@
 # !/usr/bin/python
 # -*- coding:utf-8 -*-
 
-from sklearn import metrics
+from sklearn import metrics#评估
 
 
 if __name__ == "__main__":
